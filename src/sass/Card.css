@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cardSection {
+  width: 25%;
+  height: auto;
+  border: 2px solid #000;
+  margin-left: 350px;
+  margin-top: 150px;
+}
+
+.imageSection img {
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=Card.css.map */

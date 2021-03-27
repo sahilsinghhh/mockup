@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mainHeader {
+  width: 100%;
+  height: auto;
+}
+
+.imageSection img {
+  width: 150px;
+  height: auto;
+  float: left;
+  padding: 20px 10px;
+}
+/*# sourceMappingURL=Header.css.map */
