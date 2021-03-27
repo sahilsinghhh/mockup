@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import Map from './Map'
+import SimpleMap from './SimpleMap'
 class NewLat extends Component {
     constructor(props) {
         super(props);
@@ -17,8 +17,8 @@ class NewLat extends Component {
             .then(response =>
                 this.setState
                     ({
-              lat: response.data.company.address.longitude,
-              lng: response.data.company.address.latitude,
+              lng: response.data.company.address.longitude,
+              lat: response.data.company.address.latitude,
 
                     })
             )
@@ -29,11 +29,13 @@ class NewLat extends Component {
         console.log(this.state.lat );
         return ( 
             <>
-            <h3>Latitude - {this.state.lat} </h3>
             <h3>Longitude - {this.state.lng} </h3>
-           <Map latitude = {this.state.lat}  longitude =  {this.state.lng} />
-         {/* <h3>Latitude - {this.state.lat}</h3>
-         <h3>Longitude - {this.state.lng}</h3> */}
+            <h3>Latitude - {this.state.lat} </h3>
+           <SimpleMap longitude= {this.state.lng}  latitude =  {this.state.lat} />
+        
+
+
+
 
             </>
          );

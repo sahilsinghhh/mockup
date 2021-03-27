@@ -1,17 +1,25 @@
 import React, { Component } from 'react';
-import {Map, style, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import {Map,  InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
  
-export class SimpleMap extends Component {
-  render() {
-    return (
-    //   <Map google={this.props.google} zoom={14}>
 
+
+export class SimpleMap extends Component {
+    render() {
+        const style = {
+            width: '30%',
+            height: '50%'
+          }
+        return (
+    //   <Map google={this.props.google} zoom={14}>
+ <div className="MapContainer"style={{width:'150px' , height:'150px'}} >
+
+ 
     <Map
     google={this.props.google}
     style={style}
     initialCenter={{
-      lat: 50.779729,
-      lng: 6.100367
+      lat: this.props.latitude,
+      lng: this.props.longitude
     }}
     zoom={15}
     onClick={this.onMapClicked}
@@ -21,11 +29,10 @@ export class SimpleMap extends Component {
                 name={'Current location'} />
  
         <InfoWindow onClose={this.onInfoWindowClose}>
-            {/* <div>
-              <h1>{this.state.selectedPlace.name}</h1>
-            </div> */}
+        
         </InfoWindow>
       </Map>
+      </div>
     );
   }
 }
