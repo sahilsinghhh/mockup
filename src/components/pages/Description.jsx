@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import '../../sass/Card.scss'
+import '../../sass/home.scss'
 
 class Description extends Component {
     constructor(props) {

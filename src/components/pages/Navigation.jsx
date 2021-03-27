@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, { Component } from 'react';
 import {
   BrowserRouter as Router,  
   Route,
@@ -9,10 +10,13 @@ import Product from './Product'
 import Description from './Description'
 import Attributes from './Attributes'
 
+class Navigation extends Component {
+  
+  render() { 
+    return ( 
+<>
 
-export default function App() {
-  return (
-    <Router>
+<Router>
       <div> 
           <ul>
             <li><Link to="/">Home</Link></li>
@@ -26,7 +30,11 @@ export default function App() {
           <Route exact path="/attributes" component = {Attributes} />     
       </div>
     </Router>
-  );
+
+</>
+
+     );
+  }
 }
-
-
+ 
+export default Navigation;

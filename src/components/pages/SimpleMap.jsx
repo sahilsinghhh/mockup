@@ -6,8 +6,11 @@ import {Map,  InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 export class SimpleMap extends Component {
     render() {
         const style = {
-            width: '30%',
-            height: '50%'
+            width: '25%',
+            height: '50%',
+            position: 'relative',
+            left:'975px',
+            top: '-630px'
           }
         return (
     //   <Map google={this.props.google} zoom={14}>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import '../../sass/user.scss'
+import '../../sass/home.scss'
 
 class User extends Component {
     constructor(props) {
@@ -42,8 +42,8 @@ class User extends Component {
                 </div>
 
                 <div className="userInfo">
-                  <h3>Name - {this.state.userFname} {this.state.userLname}</h3>
-                  <h3>Company name -  {this.state.company} </h3>
+                  <p>Name - {this.state.userFname} {this.state.userLname}</p>
+                  <p>Company name -  {this.state.company} </p>
                 </div>
             </div>
             </>

@@ -1,23 +1,25 @@
 
 import React from 'react';
 import './App.css';
-
-import Layout from './components/pages/Layout';
+import Navigation from './components/pages/Navigation'
+// import Header from './components/pages/Header'
+import Home from './components/pages/Home';
 
 
 function App() {
   return (
     <>
-
       <div className="App">
-      <Layout/>
+        
+        {/* <Header /> */}
+        <Home/>
+
       </div>
     </>
   );
 }
 
 export default App;
-
 
 
 

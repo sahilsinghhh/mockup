@@ -1,15 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Card from './Card'
+import User from './User'
+import NewLat from './NewLat'
+import '../../sass/home.scss'
 
-// import Layout from './Layout';
+class Home extends Component {
 
+  render() {
+    return (
+      <>
+        <div className='home'>
+       
+          <div className="homeSection">
+            <Card />
+          </div>
 
-const Overview = () => {
-  return (
-    <div className='home'>
- 
-<h1>Home</h1>
-    </div>
-  );
-};
+          <div className="userSection">
+            <User />
+          </div>
+        </div>
 
-export default Overview;
+        <div className="map">
+          <div className="mapSection">
+            <NewLat />
+          </div>
+        </div >
+      </>
+    );
+  }
+}
+
+export default Home;
+

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import product from '/Mockup/mockup/src/images/product-image.png'
-import '../../sass/Card.scss'
+import '../../sass/home.scss'
 import { Link } from 'react-router-dom';
 import axios from 'axios'
 import Description from './Description';
 import Attributes from './Attributes'
+import '../../sass/home.scss'
 
 
 class Card extends Component {
